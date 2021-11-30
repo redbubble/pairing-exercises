@@ -1,0 +1,23 @@
+.App {
+  padding: 20px;
+}
+
+.App-logo {
+  height: 5vmin;
+  pointer-events: none;
+}
+
+.App-works {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+
+.App-work {
+  list-style: none;
+}
+
+.App-workimage {
+  width: 100%;
+}
