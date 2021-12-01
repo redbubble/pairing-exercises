@@ -25,7 +25,7 @@ function App() {
           <h2>Works</h2>
           <ul className="App-works">
             {works.map((work, index) => (
-              <li className="App-work">
+              <li key={index} className="App-work">
                 <img src={work} alt={index} className="App-workimage"/>
               </li>
             ))}
