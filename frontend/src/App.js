@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
@@ -14,6 +15,22 @@ const works = [
 ]
 
 function App() {
+  const [data, setData] = useState({});
+
+  useEffect(() => {
+    const fetchData = async () => {
+      const result = await fetch(
+        'https://take-home-test.herokuapp.com/api/v1/works.json',
+      );
+      const data = await result.json();
+
+      setData(data);
+    };
+
+    fetchData();
+  }, []);
+
+
   return (
     <div className="App">
       <header className="App-header">
