@@ -1,0 +1,18 @@
+[
+  {
+    "product-type": "hoodie",
+    "options": {
+      "colour": ["dark"],
+      "size": ["xl", "2xl", "3xl"]
+    },
+    "base-price": 5000
+  },
+  {
+    "product-type": "hoodie",
+    "options": {
+      "colour": ["dark"],
+      "size": ["xl", "2xl", "3xl"]
+    },
+    "base-price": 1000
+  }
+]
