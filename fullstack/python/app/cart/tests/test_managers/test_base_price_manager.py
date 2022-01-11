@@ -1,39 +1,59 @@
-from pathlib import Path
+import pytest
 
 from app.cart.managers.base_price_manager import ProductBasePriceManager
-from app.cart.models.factories.base_price_factory import ProductBasePriceFactory
+from app.cart.tests import DATA_DIR
 
 
-def test_init_without_json_file():
-    manager = ProductBasePriceManager()
-    assert not manager.data
+@pytest.fixture
+def base_price_manager():
+    return ProductBasePriceManager(json_file=DATA_DIR / 'base-prices.json')
 
 
-def test_init_with_json_file_correctly():
-    manager = ProductBasePriceManager(
-        json_file=Path(__file__).parents[1] / 'data' / 'base-prices.json'
-    )
-
-    assert set(manager.data.keys()) == {
-        'hoodie', 'sticker', 'leggings'
-    }
-    assert len(manager.data['hoodie']) == 5
-    assert len(manager.data['sticker']) == 4
-    assert len(manager.data['leggings']) == 1
-
-
-def test_lookup_matching_item():
-    manager = ProductBasePriceManager()
-    base_price = ProductBasePriceFactory(options={
-        'hello': ['from'],
-        'the': ['other', 'side'],
-    })
-
-    manager.add_base_price(base_price)
-    assert base_price == manager.lookup(
-        product_type=base_price.product_type,
+def test_lookup_single_option_item(base_price_manager):
+    result = base_price_manager.lookup(
+        product_type='hoodie',
         options={
-            'hello': 'from',
-            'the': 'side'
+            'size': 'large',
+            'colour': 'white'
         }
     )
+
+    assert result == {
+        'product-type': 'hoodie',
+        'options': {
+            'size': ['large'],
+            'colour': ['white']
+        },
+        'base-price': 3848
+    }
+
+
+def test_lookup_multiple_option_item(base_price_manager):
+    result = base_price_manager.lookup(
+        product_type='hoodie',
+        options={
+            'size': 'small',
+            'colour': 'dark'
+        }
+    )
+
+    assert result == {
+        'product-type': 'hoodie',
+        'options': {
+            'colour': ['white', 'dark'],
+            'size': ['small', 'medium']
+        },
+        'base-price': 3800
+    }
+
+
+def test_lookup_zero_option_item(base_price_manager):
+    result = base_price_manager.lookup(
+        product_type='leggings',
+    )
+
+    assert result == {
+        'product-type': 'leggings',
+        'options': {},
+        'base-price': 5000
+    }

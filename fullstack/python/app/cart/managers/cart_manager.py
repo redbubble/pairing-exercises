@@ -19,11 +19,7 @@ class CartManager:
         self.data = from_list(CartItem.from_dict, raw_data)
 
     def lookup_price(self, base_price_manager: ProductBasePriceManager):
-        for cart_item in self.data:
-            cart_item.base_price = base_price_manager.lookup(
-                product_type=cart_item.product_type,
-                options=cart_item.options
-            )
+        raise NotImplementedError
 
     def calculate_total_prices(self):
-        return sum(cart_item.calculate_price() for cart_item in self.data)
+        raise NotImplementedError
