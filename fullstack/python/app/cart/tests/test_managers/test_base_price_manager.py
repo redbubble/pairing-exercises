@@ -1,14 +1,3 @@
-import pytest
-
-from app.cart.managers.base_price_manager import ProductBasePriceManager
-from app.cart.tests import DATA_DIR
-
-
-@pytest.fixture
-def base_price_manager():
-    return ProductBasePriceManager(json_file=DATA_DIR / 'base-prices.json')
-
-
 def test_lookup_single_option_item(base_price_manager):
     result = base_price_manager.lookup(
         product_type='hoodie',

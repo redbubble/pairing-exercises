@@ -17,10 +17,8 @@ class ProductBasePriceManager:
         raw_data = read_json(json_file)
 
         for raw_item in raw_data:
-            self.add_base_price(product_base_price=ProductBasePrice.from_dict(raw_item))
+            product_base_price = ProductBasePrice.from_dict(raw_item)
+            self.data[product_base_price.product_type].append(product_base_price)
 
-    def add_base_price(self, product_base_price):
-        raise NotImplementedError
-
-    def lookup(self, product_type, options) -> 'ProductBasePrice':
+    def lookup(self, product_type, options=None) -> 'ProductBasePrice':
         raise NotImplementedError

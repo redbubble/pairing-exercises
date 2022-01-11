@@ -1,7 +1,7 @@
 import pytest
 
 from app.cart.managers.cart_manager import CartManager
-from app.cart.tests import DATA_DIR
+from app.cart.tests.conftest import DATA_DIR
 
 
 @pytest.mark.parametrize(
