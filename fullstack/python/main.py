@@ -21,7 +21,7 @@ def main(cart, base_prices):
     base_price_manager = ProductBasePriceManager(json_file=base_prices)
     cart_manager = CartManager(json_file=cart)
 
-    cart_manager.lookup_price(base_price_manager)
+    cart_manager.set_base_price(base_price_manager)
 
     click.echo(cart_manager.calculate_total_prices())
 
