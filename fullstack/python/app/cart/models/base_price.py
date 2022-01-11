@@ -1,8 +1,8 @@
 from collections import defaultdict
 from dataclasses import dataclass, field
-from typing import Dict, Any, List
+from typing import Dict, List
 
-from app.common.models.converters import from_str, from_dict, from_int
+from app.common.models.converters import from_dict, from_int, from_str
 
 
 @dataclass
@@ -14,7 +14,7 @@ class ProductBasePrice:
     price: int = 0
 
     @staticmethod
-    def from_dict(obj: Any) -> 'ProductBasePrice':
+    def from_dict(obj: Dict) -> 'ProductBasePrice':
         assert isinstance(obj, dict)
 
         product_type = from_str(obj.get('product-type'))
@@ -28,7 +28,7 @@ class ProductBasePrice:
         )
 
     def __eq__(self, other) -> bool:
-        if isinstance(other, ProductBasePrice):
+        if isinstance(other, self.__class__):
             other = other.__dict__
 
         return self.__dict__ == other
