@@ -2,7 +2,7 @@
 
 ## Requirements
 
-- Python 3.8.1 or later
+- Python 3.8 or later
 - Pipenv (install as instructed [here](https://github.com/pypa/pipenv#installation))
 (optional, but it's more convenient than the factory-included `pip`)
 
