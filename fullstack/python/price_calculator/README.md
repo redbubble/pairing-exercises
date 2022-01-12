@@ -39,6 +39,13 @@ $ pip install -r requirements.txt
 ```
 
 ## Run the micro app
+Certain functions are not implemented, and when called will raise a `NotImplementedError`.
+
+For the application to work, these will need to be completed. Once you are ready, use the following
+instructions to run the application.
+
+You can find the function requirements at the following URL:
+http://take-home-test.herokuapp.com/new-product-engineer
 
 ```shell script
 # Now you can run the Python CLI app. Use --help to show the options
@@ -59,8 +66,9 @@ $ python main.py -c app/cart/tests/data/cart-11356.json -p app/cart/tests/data/b
 ```
 
 ## Run the test suite
-
+Certain tests will fail, and will return a `NotImplementedError`. Running the test suite will show you 
+which parts of the application need to be finished.
 ```shell script
 # Run the test suite with coverage
-$ pytest --cov
+$ pytest --cov app/cart
 ```
