@@ -1,4 +1,4 @@
-# Skeleton for Redbubble Pairing Exercise
+# Skeleton for Redbubble's Pairing Exercise
 
 ## Requirements
 
