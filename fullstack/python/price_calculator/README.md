@@ -6,6 +6,10 @@
 - Pipenv (install as instructed [here](https://github.com/pypa/pipenv#installation))
 (optional, but it's more convenient than the factory-included `pip`)
 
+## Functional Requirements
+You can find the function requirements at the following URL:
+http://take-home-test.herokuapp.com/new-product-engineer
+
 ## Install dependencies
 
 Make sure you are at the same location with `Pipfile` and `requirements.txt`.
@@ -44,9 +48,6 @@ Certain functions are not implemented, and when called will raise a `NotImplemen
 For the application to work, these will need to be completed. Once you are ready, use the following
 instructions to run the application.
 
-You can find the function requirements at the following URL:
-http://take-home-test.herokuapp.com/new-product-engineer
-
 ```shell script
 # Now you can run the Python CLI app. Use --help to show the options
 $ python main.py --help
@@ -70,5 +71,5 @@ Certain tests will fail, and will return a `NotImplementedError`. Running the te
 which parts of the application need to be finished.
 ```shell script
 # Run the test suite with coverage
-$ pytest --cov app/cart
+$ pytest app/cart
 ```
