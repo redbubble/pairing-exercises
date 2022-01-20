@@ -9,8 +9,9 @@ from app.cart.tests.conftest import DATA_DIR
     argvalues=[9363, 9500, 11356]
 )
 def test_lookup_price_and_calculate_total(base_price_manager, amount):
-    cart_manager = CartManager(json_file=DATA_DIR / 'cart-{}.json'.format(amount))
-
-    cart_manager.set_base_price(base_price_manager)
+    cart_manager = CartManager(
+        base_price_manager=base_price_manager,
+        json_file=DATA_DIR / 'cart-{}.json'.format(amount)
+    )
 
     assert cart_manager.calculate_total_prices() == amount

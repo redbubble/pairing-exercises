@@ -8,18 +8,17 @@ from app.common.utils import read_json
 
 class CartManager:
     data: List[CartItem]
+    base_price_manager: ProductBasePriceManager
 
-    def __init__(self, json_file=None):
-        self.data = []
-        self.read_json(json_file)
+    def __init__(self, base_price_manager=None, json_file=None):
+        self.data = self.read_json(json_file) or []
+        self.base_price_manager = base_price_manager
 
-    def read_json(self, json_file):
+    @staticmethod
+    def read_json(json_file):
         raw_data = read_json(json_file)
 
-        self.data = from_list(CartItem.from_dict, raw_data)
-
-    def set_base_price(self, base_price_manager: ProductBasePriceManager):
-        raise NotImplementedError
+        return from_list(CartItem.from_dict, raw_data)
 
     def calculate_total_prices(self):
         raise NotImplementedError

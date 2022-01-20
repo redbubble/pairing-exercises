@@ -10,14 +10,14 @@ def test_lookup_single_option_item(base_price_manager):
         }
     )
 
-    assert result == ProductBasePrice.from_dict({
-        'product-type': 'hoodie',
-        'options': {
-            'size': ['large'],
-            'colour': ['white']
+    assert result == ProductBasePrice(
+        product_type='hoodie',
+        options={
+            'colour': ['white'],
+            'size': ['large']
         },
-        'base-price': 3848
-    })
+        price=3848
+    )
 
 
 def test_lookup_multiple_option_item(base_price_manager):
@@ -29,23 +29,23 @@ def test_lookup_multiple_option_item(base_price_manager):
         }
     )
 
-    assert result == ProductBasePrice.from_dict({
-        'product-type': 'hoodie',
-        'options': {
+    assert result == ProductBasePrice(
+        product_type='hoodie',
+        options={
             'colour': ['white', 'dark'],
             'size': ['small', 'medium']
         },
-        'base-price': 3800
-    })
+        price=3800
+    )
 
 
 def test_lookup_zero_option_item(base_price_manager):
     result = base_price_manager.lookup(
-        product_type='leggings',
+        product_type='leggings'
     )
 
-    assert result == ProductBasePrice.from_dict({
-        'product-type': 'leggings',
-        'options': {},
-        'base-price': 5000
-    })
+    assert result == ProductBasePrice(
+        product_type='leggings',
+        options={},
+        price=5000
+    )

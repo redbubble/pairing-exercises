@@ -9,16 +9,18 @@ class ProductBasePriceManager:
     data: Dict[str, List[ProductBasePrice]]
 
     def __init__(self, json_file=None):
-        self.data = defaultdict(list)
+        self.data = self.read_json(json_file)
 
-        self.read_json(json_file)
-
-    def read_json(self, json_file):
+    @staticmethod
+    def read_json(json_file):
+        data = defaultdict(list)
         raw_data = read_json(json_file)
 
         for raw_item in raw_data:
             product_base_price = ProductBasePrice.from_dict(raw_item)
-            self.data[product_base_price.product_type].append(product_base_price)
+            data[product_base_price.product_type].append(product_base_price)
+
+        return data
 
     def lookup(self, product_type, options=None) -> 'ProductBasePrice':
         raise NotImplementedError
