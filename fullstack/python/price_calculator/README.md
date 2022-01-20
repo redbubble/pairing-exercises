@@ -7,12 +7,14 @@
 (optional, but it's more convenient than the factory-included `pip`)
 
 ## Functional Requirements
+
 You can find the function requirements at the following URL:
 http://take-home-test.herokuapp.com/new-product-engineer
 
 ## Install dependencies
 
-Make sure you are at the same location with `Pipfile` and `requirements.txt`.
+During your Code Interview round, you will be given a repository to clone (where this README.md file came from).
+Once you have done that, make sure you are at the same location with `Pipfile` and `requirements.txt`.
 
 ### Using Pipenv
 
@@ -49,7 +51,7 @@ For the application to work, these will need to be completed. Once you are ready
 instructions to run the application.
 
 ```shell script
-# Now you can run the Python CLI app. Use --help to show the options
+# Run the Python CLI app. Use --help to show the options
 $ python main.py --help
 
 Usage: main.py [OPTIONS]
@@ -67,8 +69,10 @@ $ python main.py -c app/cart/tests/data/cart-11356.json -p app/cart/tests/data/b
 ```
 
 ## Run the test suite
-Certain tests will fail, and will return a `NotImplementedError`. Running the test suite will show you 
+
+Certain tests will fail due to the `NotImplementedError`. Running the test suite will show you 
 which parts of the application need to be finished.
+
 ```shell script
 # Run the test suite with coverage
 $ pytest app/cart
