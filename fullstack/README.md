@@ -26,4 +26,4 @@ current code.
   - Tests
   - Business logic
   - Design choices
-- It's not perfect, we'd love to hear how you've improve it
+- It's not perfect, we'd love to hear how you'd improve it
