@@ -2,7 +2,7 @@
 
 ## Functional Requirements
 
-You can find the function requirements at the following URL:
+You can find the functional requirements at the following URL:
 http://take-home-test.herokuapp.com/new-product-engineer
 
 ## Dependencies
