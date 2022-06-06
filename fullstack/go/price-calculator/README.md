@@ -10,7 +10,7 @@ http://take-home-test.herokuapp.com/new-product-engineer
 * This was written with Go 1.16 but should be fine with 1.13+
 * Some kind of bash terminal to leverage the `build.sh` script
 
-## Build & run
+## Install & run
 
 ### The easy way
 

@@ -1,24 +1,26 @@
 # Skeleton for Redbubble's Pairing Exercise
 
+## Functional Requirements
+
+You can find the function requirements at the following URL:
+http://take-home-test.herokuapp.com/new-product-engineer
+
 ## Requirements
 
 - Python 3.8 or later
 - Pipenv (install as instructed [here](https://github.com/pypa/pipenv#installation))
 (optional, but it's more convenient than the factory-included `pip`)
 
-## Functional Requirements
+## Install
 
-You can find the function requirements at the following URL:
-http://take-home-test.herokuapp.com/new-product-engineer
-
-## Install dependencies
-
-During your Code Interview round, you will be given a repository to clone (where this README.md file came from).
-Once you have done that, make sure you are at the same location with `Pipfile` and `requirements.txt`.
+During your Code Interview round, you will be given a repository to clone
+(where this README.md file came from). Once you have done that, make sure you
+are at the same location with `Pipfile` and `requirements.txt`.
 
 ### Using Pipenv
 
-Use Pipenv to install the dependencies with the `--dev` flag so that you can run the test suite later.
+Use Pipenv to install the dependencies with the `--dev` flag so that you can run
+the test suite later.
 
 ```shell script
 # Install dependencies with pipenv
@@ -31,7 +33,8 @@ $ pipenv shell
 
 ### Using pip and requirements.txt
 
-Pip of course can be used to install the dependencies. Please follow the steps below to have the micro app up and running.
+Pip of course can be used to install the dependencies. Please follow the steps
+below to have the micro app up and running.
 
 ```shell script
 # Create a new virtual environment (Python 3.4+)
@@ -44,22 +47,13 @@ $ source <DIR>/bin/activate
 $ pip install -r requirements.txt
 ```
 
-## Run the test suite
-
-Certain tests will fail due to the `NotImplementedError`. Running the test suite will show you 
-which parts of the application need to be finished.
-
-```shell script
-# Run the test suite with coverage
-$ pytest app/cart
-```
-
 ## Run the micro app
 
-Certain functions are not implemented, and when called will raise a `NotImplementedError`.
+Certain functions are not implemented, and when called will raise a
+`NotImplementedError`.
 
-For the application to work, these will need to be completed. Once you are ready, use the following
-instructions to run the application.
+For the application to work, these will need to be completed. Once you are
+ready, use the following instructions to run the application.
 
 ```shell script
 # Run the Python CLI app. Use --help to show the options
@@ -77,4 +71,14 @@ Options:
 $ python main.py -c app/cart/tests/data/cart-9363.json -p app/cart/tests/data/base-prices.json
 
 $ python main.py -c app/cart/tests/data/cart-11356.json -p app/cart/tests/data/base-prices.json
+```
+
+## Run the test suite
+
+Certain tests will fail due to the `NotImplementedError`. Running the test suite
+will show you which parts of the application need to be finished.
+
+```shell script
+# Run the test suite with coverage
+$ pytest app/cart
 ```

@@ -11,7 +11,7 @@ http://take-home-test.herokuapp.com/new-product-engineer
 - bundler 2.0.2
 - rspec 3.8.0
 
-## Set up
+## Install
 
 rbenv was used to manage ruby environments in this project.
 To install rbenv run:
@@ -50,20 +50,7 @@ To install all other gems run:
 bundle install
 ```
 
-## Running Test
-
-RSpec was used to build the test suite for this application. Please follow the
-set up instructions to ensure RSpec is installed.
-Tests are configured to run in documentation mode so that contexts and
-expectations are easier to understand.
-
-To run the test suite:
-
-```shell
-bundle exec rspec spec
-```
-
-## Running the application
+## Run the micro app
 
 To run the application with one of the given files.
 Available carts:
@@ -84,6 +71,19 @@ folder. To run the application with a new base prices file, add it to the
 
 ```shell
 ruby app.rb <new cart filename> <new base prices filename>
+```
+
+## Run the test suite
+
+RSpec was used to build the test suite for this application. Please follow the
+set up instructions to ensure RSpec is installed.
+Tests are configured to run in documentation mode so that contexts and
+expectations are easier to understand.
+
+To run the test suite:
+
+```shell
+bundle exec rspec spec
 ```
 
 ## Running benchmarks
