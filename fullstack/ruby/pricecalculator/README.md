@@ -1,16 +1,17 @@
-# Redbubble Coding Test - Price Calculator
+# Redbubble Fullstack Pairing Exercise - Price Calculator
 
-### Development Notes
+## Functional Requirements
 
-[Some thoughts before, during and after development](./NOTES.md)
+You can find the function requirements at the following URL:
+http://take-home-test.herokuapp.com/new-product-engineer
 
-### Dependencies
+## Dependencies
 
 - ruby 2.6.3
 - bundler 2.0.2
 - rspec 3.8.0
 
-### Set up
+## Set up
 
 rbenv was used to manage ruby environments in this project.
 To install rbenv run:
@@ -49,7 +50,7 @@ To install all other gems run:
 bundle install
 ```
 
-### Running Test
+## Running Test
 
 RSpec was used to build the test suite for this application. Please follow the
 set up instructions to ensure RSpec is installed.
@@ -62,7 +63,7 @@ To run the test suite:
 bundle exec rspec spec
 ```
 
-### Running the application
+## Running the application
 
 To run the application with one of the given files.
 Available carts:
@@ -77,17 +78,16 @@ Available carts:
 ruby app.rb cart-4560.json base-prices.json
 ```
 
-To run the application with a new cart file, add it to the `/public/carts` folder. To run the application with a new base prices file, add it to the
+To run the application with a new cart file, add it to the `/public/carts`
+folder. To run the application with a new base prices file, add it to the
 `/public/prices` folder, then run:
 
 ```shell
 ruby app.rb <new cart filename> <new base prices filename>
 ```
 
-### Running benchmarks
+## Running benchmarks
 
 ```shell
 ruby ./benchmark/search.rb
 ```
-
-[Notes on benchmark results](./NOTES.md#building-a-better-search)

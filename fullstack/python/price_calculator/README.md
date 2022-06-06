@@ -44,7 +44,18 @@ $ source <DIR>/bin/activate
 $ pip install -r requirements.txt
 ```
 
+## Run the test suite
+
+Certain tests will fail due to the `NotImplementedError`. Running the test suite will show you 
+which parts of the application need to be finished.
+
+```shell script
+# Run the test suite with coverage
+$ pytest app/cart
+```
+
 ## Run the micro app
+
 Certain functions are not implemented, and when called will raise a `NotImplementedError`.
 
 For the application to work, these will need to be completed. Once you are ready, use the following
@@ -66,14 +77,4 @@ Options:
 $ python main.py -c app/cart/tests/data/cart-9363.json -p app/cart/tests/data/base-prices.json
 
 $ python main.py -c app/cart/tests/data/cart-11356.json -p app/cart/tests/data/base-prices.json
-```
-
-## Run the test suite
-
-Certain tests will fail due to the `NotImplementedError`. Running the test suite will show you 
-which parts of the application need to be finished.
-
-```shell script
-# Run the test suite with coverage
-$ pytest app/cart
 ```
