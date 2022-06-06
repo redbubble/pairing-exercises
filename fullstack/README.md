@@ -11,7 +11,7 @@ following [functional requirements](http://take-home-test.herokuapp.com/new-prod
 We'll use it as a basis for our fullstack pairing exercise.
 
 In the interview we'll talk through the structure of the codebase, your thoughts
-on the design, and how you might involve it. Then we will do an extension on the
+on the design, and how you might improve it. Then we will do an extension on the
 current code.
 
 ## Interview prep
