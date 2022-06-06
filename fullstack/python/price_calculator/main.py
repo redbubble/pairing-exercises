@@ -17,10 +17,10 @@ from app.cart.managers.cart_manager import CartManager
     type=str,
     help='Path to a JSON file representing a list of base prices'
 )
-def main(cart_json_file, base_prices):
+def main(cart, base_prices):
     cart_manager = CartManager(
         base_price_manager=ProductBasePriceManager(json_file=base_prices),
-        json_file=cart_json_file
+        json_file=cart
     )
 
     click.echo(cart_manager.calculate_total_prices())
