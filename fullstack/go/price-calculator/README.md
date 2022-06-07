@@ -1,16 +1,26 @@
-# RedBubble price calculator
+# Redbubble Fullstack Pairing Exercise - Price Calculator
 
-##Dependencies
-* this was written with Go 1.16 but should be fine with 1.13+
-* some kind of bash terminal to leverage the `build.sh` script
+## Functional Requirements
 
-## Build & run 
-###The easy way
-use the `build.sh` script provided (make sure it has executable permisiions)
-* build and run `./build.sh calculate testdata/provided/cart-4560.json testdata/provided/base-prices.json`
-* tests `./build.sh test`
-* coverage `./build.sh coverage`
+You can find the functional requirements at the following URL:
+http://take-home-test.herokuapp.com/new-product-engineer
 
-###Alternatively
-* to build from the project root `GOBIN=$(pwd)/bin go install ./...` 
-* then run `./bin/calculate -cartFile=<cartFile> -pricesFile=<priceFile>`
+## Dependencies
+
+* This was written with Go 1.16 but should be fine with 1.13+
+* Some kind of bash terminal to leverage the `build.sh` script
+
+## Install & run
+
+### The easy way
+
+Use the `build.sh` script provided (make sure it has executable permisiions)
+
+* Build and run `./build.sh calculate testdata/provided/cart-4560.json testdata/provided/base-prices.json`
+* Tests `./build.sh test`
+* Coverage `./build.sh coverage`
+
+### Alternatively
+
+* To build from the project root `GOBIN=$(pwd)/bin go install ./...` 
+* Then run `./bin/calculate -cartFile=<cartFile> -pricesFile=<priceFile>`
