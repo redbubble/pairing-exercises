@@ -1,4 +1,4 @@
-# Skeleton for Pairing Exercise (JS)
+# Redbubble price calculator
 
 ## Functional Requirements
 
@@ -14,22 +14,6 @@ http://take-home-test.herokuapp.com/new-product-engineer
 
 ```
 npm install
-```
-
-## Linting and formatting
-
-Linting provided by ESLint and Prettier.
-
-```
-npm run lint
-```
-
-## Testing
-
-Testing using Jest framework.
-
-```
-npm run test
 ```
 
 ## Usage
@@ -53,4 +37,20 @@ Using prompts:
 
 ```
 node bin/price-calculator
+```
+
+## Linting and formatting
+
+Linting provided by ESLint and Prettier.
+
+```
+npm run lint
+```
+
+## Testing
+
+Testing using Jest framework.
+
+```
+npm run test
 ```
