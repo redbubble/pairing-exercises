@@ -5,7 +5,7 @@ import chalk from 'chalk'
 import { round } from 'lodash'
 
 /**
- * Get card and price from command line arguments.
+ * Get cart and price from command line arguments.
  *
  * @param {Array} rawArgs - Command line arguments.
  * @returns {Object}
