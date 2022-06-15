@@ -17,7 +17,7 @@ func TestLookupSingleOptionItem(t *testing.T) {
 		},
 	)
 	if !found {
-		t.Fatal()
+		t.Fatal("base price not found")
 	}
 
 	expected := models.ProductBasePrice{
@@ -43,7 +43,7 @@ func TestLookupMultipleOptionItem(t *testing.T) {
 		},
 	)
 	if !found {
-		t.Fatal()
+		t.Fatal("base price not found")
 	}
 
 	expected := models.ProductBasePrice{
@@ -63,7 +63,7 @@ func TestLookupZeroOptionItem(t *testing.T) {
 	mgr := loadBasePriceManager(t)
 	result, found := mgr.Lookup("leggings", nil)
 	if !found {
-		t.Fatal()
+		t.Fatal("base price not found")
 	}
 
 	expected := models.ProductBasePrice{
