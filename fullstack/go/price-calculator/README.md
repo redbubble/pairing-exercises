@@ -59,5 +59,6 @@ file and a cart file.
 JSON schemas for the test data can be found in the `./schemas` folder. These
 are provided for reference/documentation purposes only. You will not be required
 to use them or integrate them, and they are not used at all by the existing code.
-They're just here in case you find them helpful.
+They're just here in case you find them helpful, and can be safely ignored if
+you don't.
 
