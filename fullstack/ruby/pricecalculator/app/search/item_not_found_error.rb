@@ -1,2 +1,0 @@
-class ItemNotFoundError < StandardError
-end
