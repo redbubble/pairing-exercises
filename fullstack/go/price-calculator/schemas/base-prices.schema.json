@@ -1,5 +1,7 @@
 {
+  "description": "This schema is provided for documentation purposes only; it is not a required part of the exercise, nor is it used in any way.",
   "$schema": "http://json-schema.org/draft-04/schema#",
+
   "type": "array",
   "items": {
     "type": "object",
