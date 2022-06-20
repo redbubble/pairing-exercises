@@ -1,6 +1,6 @@
 import arg from 'arg'
 import inquirer from 'inquirer'
-import calculate from './src/calculate'
+import calculate from './app/calculate'
 import chalk from 'chalk'
 import { round } from 'lodash'
 
