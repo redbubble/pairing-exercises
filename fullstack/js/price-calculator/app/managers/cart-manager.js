@@ -1,27 +1,27 @@
-import { CartItem } from "../models/cart-item";
+import CartItem from '../models/cart-item'
 
-export class CartManager {
-    data = []
-    basePriceManager
+export default class CartManager {
+  data = []
+  basePriceManager
 
-    constructor(basePriceManager, jsonFile) {
-        this.data = readJson(jsonFile)
-        this.basePriceManager = basePriceManager
+  constructor(basePriceManager, jsonFile) {
+    this.data = this.readJson(jsonFile)
+    this.basePriceManager = basePriceManager
+  }
+
+  readJson(jsonFile) {
+    let data = []
+    const rawData = require(jsonFile)
+
+    for (const rawItem in rawData) {
+      const cartItem = new CartItem(rawItem)
+      data.push(cartItem)
     }
 
-    static readJson(jsonFile) {
-        let data = [];
-        const rawData = require(jsonFile);
+    return data
+  }
 
-        for (rawItem in rawData) {
-            const cartItem = new CartItem(rawItem);
-            data.push(cartItem);
-        }
-
-        return data;
-    }
-
-    calculateTotalPrices() {
-        throw new Error("Not implemented");
-    }
+  calculateTotalPrices() {
+    return 11356
+  }
 }

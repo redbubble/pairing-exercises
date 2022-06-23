@@ -7,7 +7,7 @@
   },
   "main": "cli.js",
   "scripts": {
-    "lint": "eslint src --fix",
+    "lint": "eslint app --fix",
     "test": "jest"
   },
   "keywords": [
@@ -21,8 +21,8 @@
     "esm": "^3.2.25"
   },
   "devDependencies": {
+    "@babel/eslint-parser": "^7.18.2",
     "@babel/preset-env": "^7.18.2",
-    "babel-eslint": "^10.1.0",
     "babel-jest": "^27.5.1",
     "eslint": "^7.32.0",
     "eslint-config-prettier": "^8.5.0",

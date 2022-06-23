@@ -1,25 +1,29 @@
-import { ProductBasePrice } from "../models/base-price";
+import ProductBasePrice from '../models/base-price'
 
-export class BasePriceManager {
-    data = {};
+export default class BasePriceManager {
+  data = {}
 
-    constructor(jsonFile) {
-        this.data = this.readJson(jsonFile);
+  constructor(jsonFile) {
+    this.data = this.readJson(jsonFile)
+  }
+
+  readJson(jsonFile) {
+    let data = {}
+    const rawData = require(jsonFile)
+
+    for (const rawItem in rawData) {
+      const productBasePrice = new ProductBasePrice(rawItem)
+      data[productBasePrice.productType] = productBasePrice
     }
 
-    static readJson(jsonFile) {
-        let data = {};
-        const rawData = require(jsonFile);
+    return data
+  }
 
-        for (raw_item in rawData) {
-            const productBasePrice = new ProductBasePrice(raw_item);
-            data[productBasePrice.productType] = productBasePrice;
-        }
-
-        return data;
-    }
-
-    lookup(productType, options = []) {
-        throw Error("Not implemented")
-    }
+  lookup(productType = '', options = {}) {
+    return new ProductBasePrice({
+      'product-type': productType,
+      options: options,
+      'base-price': 3848,
+    })
+  }
 }

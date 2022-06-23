@@ -2,17 +2,18 @@ module.exports = {
   root: true,
   env: {
     node: true,
-    es6: true,
+    es2021: true,
   },
   extends: [
     'eslint:recommended',
     'plugin:prettier/recommended',
     'plugin:jest/all',
   ],
+  parser: '@babel/eslint-parser',
   parserOptions: {
-    parser: 'babel-eslint',
     sourceType: 'module',
-    ecmaVersion: 2018,
+    ecmaVersion: 12,
+    requireConfigFile: false,
   },
   rules: {
     'array-callback-return': 'warn',
@@ -37,4 +38,11 @@ module.exports = {
       },
     },
   ],
+  settings: {
+    'import/resolver': {
+      node: {
+        extensions: ['.js'],
+      },
+    },
+  },
 }
