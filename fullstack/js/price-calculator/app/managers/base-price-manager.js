@@ -20,10 +20,6 @@ export default class BasePriceManager {
   }
 
   lookup(productType = '', options = {}) {
-    return new ProductBasePrice({
-      'product-type': productType,
-      options: options,
-      'base-price': 3848,
-    })
+    throw new Error('Not implemented')
   }
 }

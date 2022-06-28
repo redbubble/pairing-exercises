@@ -22,6 +22,6 @@ export default class CartManager {
   }
 
   calculateTotalPrices() {
-    return 11356
+    throw new Error('Not implemented')
   }
 }

@@ -25,4 +25,8 @@ export default class CartItem {
     this.quantity = quantity
     this.basePrice = basePrice
   }
+
+  calculatePrice() {
+    throw new Error('Not implemented')
+  }
 }
