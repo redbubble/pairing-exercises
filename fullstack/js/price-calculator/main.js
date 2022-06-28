@@ -12,9 +12,9 @@ function parseArgumentsIntoOptions(rawArgs) {
   const args = arg(
     {
       '--cart': String,
-      '--prices': String,
-      '-c': '--cart',
-      '-p': '--prices',
+      '--base-prices': String,
+      '--c': '--cart',
+      '--p': '--base-prices',
     },
     {
       argv: rawArgs.slice(2),
@@ -22,7 +22,7 @@ function parseArgumentsIntoOptions(rawArgs) {
   )
   return {
     cart: args['--cart'] || '',
-    prices: args['--prices'] || '',
+    basePrices: args['--base-prices'] || '',
   }
 }
 
@@ -33,7 +33,7 @@ function parseArgumentsIntoOptions(rawArgs) {
 export function main(args) {
   const options = parseArgumentsIntoOptions(args)
   const cartManager = new CartManager(
-    new BasePriceManager(options.prices),
+    new BasePriceManager(options.basePrices),
     options.cart
   )
 
