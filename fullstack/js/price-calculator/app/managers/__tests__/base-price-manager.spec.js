@@ -53,7 +53,7 @@ describe('basePriceManager', () => {
 
     expect(result).toStrictEqual(
       new ProductBasePrice({
-        'product-type': 'hoodie',
+        'product-type': 'leggings',
         options: {},
         'base-price': 5000,
       })
