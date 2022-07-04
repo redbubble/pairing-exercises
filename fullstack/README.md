@@ -6,13 +6,18 @@ our engineers during the session.
 
 ## Context
 
-Each language has its own implementation of a Price Calculator app based on the
-following [functional requirements](http://take-home-test.herokuapp.com/new-product-engineer).
+Each language has its own incomplete implementation of a Price Calculator app
+based on the following [functional requirements](http://take-home-test.herokuapp.com/new-product-engineer).
 We'll use it as a basis for our fullstack pairing exercise.
 
-In the interview we'll talk through the structure of the codebase, your thoughts
-on the design, and how you might improve it. Then we will do an extension on the
-current code.
+You'll need to set up the code in your machine but don't have to complete the
+exercise before the interview.
+
+In the interview we'll talk through the structure of the codebase, and your
+thoughts on the setup and design. Then, we'll complete it together.
+
+We're not testing the language knowledge, but rather how you work with us to
+solve interesting problems.
 
 ## Interview prep
 
@@ -26,4 +31,5 @@ current code.
   - Tests
   - Business logic
   - Design choices
-- It's not perfect, we'd love to hear how you'd improve it
+- You don't need to complete the exercise prior to and during the interview.
+- We had fun creating it. It's not perfect, we'd love to hear how you'd improve it.
