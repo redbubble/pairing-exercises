@@ -1,22 +1,20 @@
 # Redbubble Fullstack Code Pairing Exercise
 
 Welcome to the fullstack code pairing exercise! You can choose whichever
-language option (Go, Python, or Ruby) that you are comfortable with to pair with
+language option (Go, Python, or Ruby) you are most comfortable to pair with
 our engineers during the session.
 
 ## Context
 
-Each language has its own incomplete implementation of a Price Calculator app
+Each language has its own incomplete implementation of a Price Calculator app,
 based on the following [functional requirements](http://take-home-test.herokuapp.com/new-product-engineer).
 We'll use it as a basis for our fullstack pairing exercise.
 
-You'll need to set up the code in your machine but don't have to complete the
-exercise before the interview.
+Before the interview, you'll need to set up the code on your machine. **However, please don't complete the
+exercise before the interview.**
 
-In the interview we'll talk through the structure of the codebase, and your
-thoughts on the setup and design. Then, we'll complete it together.
-
-We're not testing the language knowledge, but rather how you work with us to
+During the interview we'll talk through the structure of the codebase, and your
+thoughts on the setup and design, as well as the implementation. We won't be testing your language knowledge, but rather how you work with us to
 solve interesting problems.
 
 ## Interview prep
@@ -31,5 +29,6 @@ solve interesting problems.
   - Tests
   - Business logic
   - Design choices
-- You don't need to complete the exercise prior to and during the interview.
 - We had fun creating it. It's not perfect, we'd love to hear how you'd improve it.
+
+And remember: **Don't need to complete the exercise prior to the interview!**
