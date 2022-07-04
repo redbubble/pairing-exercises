@@ -2,6 +2,7 @@ package managers
 
 import (
 	"encoding/json"
+	"log"
 	"os"
 
 	"redbubble.com/calculator/models"
@@ -36,5 +37,6 @@ func (mgr ProductBasePriceManager) Lookup(
 	productType string,
 	options map[string]string,
 ) (price models.ProductBasePrice, found bool) {
-	panic("not implemented")
+	log.Fatalf("not implemented")
+	return models.ProductBasePrice{}, false
 }

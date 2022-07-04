@@ -25,7 +25,9 @@ cmd-cover() {
 
 cmd="${1:-}"
 if [[ -z "$cmd" ]]; then
-    typeset -f | grep '^cmd-' | awk '{print $1}'
+    echo >&2 "Available commands:"
+    echo
+    typeset -f | grep '^cmd-' | awk '{split($1, a ,"-"); print "-",a[2]}'
     exit 2
 fi
 "cmd-$cmd" "${@:2}"

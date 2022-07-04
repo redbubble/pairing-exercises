@@ -8,46 +8,26 @@ http://take-home-test.herokuapp.com/new-product-engineer
 ## Dependencies
 
 * Go 1.16
-* Some kind of bash terminal to leverage the `tools.sh` script
+* Some kind of shell terminal (e.g. `bash`, `zsh`) to leverage the `tools.sh` script
 
-## Install & run
+## Your mission, 007
 
-Certain functions are not implemented, and when called will panic with
-the message "not implemented".
+Some functions are not implemented (that's where you come in!). These will cause the
+tests to fail with the message "not implemented".
 
-For the application to work, these will need to be completed. Once you are
-ready, use the following instructions to run the application.
+For the application to work, these will need to be implemented. Once you are ready,
+see below on how to run the application and its tests.
 
-### The easy way
+We recommend implementing the functions in the below order. It is of course up to you!
 
-Use the `tools.sh` script provided (make sure it has executable permissions):
+* managers.ProductBasePriceManager.Lookup
+* models.CartItem.CalculatePrice
+* managers.CartManager.CalculateTotalPrices
 
-```sh
-./tools.sh calculator \
-    --base-prices=testdata/base-prices.json \
-    --cart=testdata/cart-4560.json
-```
+We also highly recommend using an IDE with Golang autocomplete enabled. It is a very
+useful feature and can save time for more interesting things during your interview!
 
-### Alternatively
-
-* To build from the project root `GOBIN=$(pwd)/bin go install ./cmd/calculator` 
-* Then run `./bin/calculator --cart=<file> --base-prices=<file>`
-
-## Run the test suite
-
-Certain tests will fail due to the `NotImplementedError`. Running the test suite
-will show you which parts of the application need to be finished.
-
-### The easy way
-
-* Run tests: `./tools.sh test`
-* Run tests with coverage: `./tools.sh cover`
-
-### Alternatively
-
-* Run manually: `go test -v ./...`
-
-## Test data
+## The data
 
 The required test data can be found in the `./testdata` folder. It contains
 a file of product base prices (`base-prices.json`), and several example carts
@@ -62,3 +42,38 @@ to use them or integrate them, and they are not used at all by the existing code
 They're just here in case you find them helpful, and can be safely ignored if
 you don't.
 
+## Running the application
+
+### The easy way
+
+Use the `tools.sh` script provided (make sure it has executable permissions).
+
+To build the application:
+
+```sh
+./tools.sh install
+```
+
+To run it:
+
+```sh
+./tools.sh calculator --base-prices=testdata/base-prices.json --cart=testdata/cart-4560.json
+```
+
+Note: there are many cart test files. The application will need to run with all of them.
+
+### The alternative way
+
+* To build from the project root `GOBIN=$(pwd)/bin go install ./cmd/calculator` 
+* Then run `./bin/calculator --cart=<file> --base-prices=<file>`
+
+## Running the test suite
+
+### The easy way
+
+* Run tests: `./tools.sh test`
+* Run tests with coverage: `./tools.sh cover`
+
+### The alternative way
+
+* Run manually: `go test -v ./...`
