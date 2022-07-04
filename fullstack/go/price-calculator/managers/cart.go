@@ -2,6 +2,7 @@ package managers
 
 import (
 	"encoding/json"
+	"log"
 	"os"
 
 	"redbubble.com/calculator/models"
@@ -30,5 +31,6 @@ func CartManagerFromFile(basePriceManager ProductBasePriceManager, cartFile stri
 }
 
 func (mgr CartManager) CalculateTotalPrices() int {
-	panic("not implemented")
+	log.Fatalf("not implemented")
+	return 0
 }
