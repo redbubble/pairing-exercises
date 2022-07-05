@@ -1,0 +1,34 @@
+{
+  "name": "@redbubble/pairing-exercises",
+  "version": "1.0.0",
+  "description": "A price calculator command-line program.",
+  "bin": {
+    "price-calculator": "bin/price-calculator"
+  },
+  "main": "cli.js",
+  "scripts": {
+    "lint": "eslint app --fix",
+    "test": "jest"
+  },
+  "keywords": [
+    "redbubble",
+    "challenge"
+  ],
+  "author": "Cosmin IANCULESCU",
+  "license": "MIT",
+  "dependencies": {
+    "arg": "^5.0.2",
+    "esm": "^3.2.25"
+  },
+  "devDependencies": {
+    "@babel/eslint-parser": "^7.18.2",
+    "@babel/preset-env": "^7.18.2",
+    "babel-jest": "^27.5.1",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-jest": "^24.7.0",
+    "eslint-plugin-prettier": "^3.4.1",
+    "jest": "^27.5.1",
+    "prettier": "2.3.1"
+  }
+}
