@@ -1,7 +1,7 @@
 # Redbubble Fullstack Code Pairing Exercise
 
 Welcome to the fullstack code pairing exercise! You can choose whichever
-language option (Go, Python, or Ruby) you are most comfortable to pair with
+language option (Go, Javascript, Python, or Ruby) you are most comfortable to pair with
 our engineers during the session.
 
 ## Context
@@ -19,7 +19,7 @@ solve interesting problems.
 
 ## Interview prep
 
-- Clone this repo. For the fullstack interview, you can pick either Go, Python,
+- Clone this repo. For the fullstack interview, you can pick either Go, Javascript, Python,
   or Ruby, and use their respective folder in the pairing session.
 - Set up the app in your IDE of choice. You will be sharing your screen during
   the pairing interview.
