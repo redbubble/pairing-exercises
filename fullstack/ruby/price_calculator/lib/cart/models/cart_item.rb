@@ -4,7 +4,7 @@ class CartItem < Struct.new(:product_type, :options, :artist_markup, :quantity, 
   end
 
   def self.from_hash(hash)
-    ProductBasePrice.new(
+    CartItem.new(
       hash.fetch('product-type'),
       hash.fetch('options'),
       hash.fetch('artist-markup'),
