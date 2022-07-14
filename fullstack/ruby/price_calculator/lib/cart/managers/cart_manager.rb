@@ -1,3 +1,5 @@
+require_relative '../models/cart_item'
+
 class CartManager
   def initialize(base_price_manager:, json_file:)
     @base_price_manager = base_price_manager
