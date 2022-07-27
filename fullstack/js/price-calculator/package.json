@@ -7,7 +7,7 @@
   },
   "main": "cli.js",
   "scripts": {
-    "lint": "eslint app --fix",
+    "lint": "eslint . --fix",
     "test": "jest"
   },
   "keywords": [
