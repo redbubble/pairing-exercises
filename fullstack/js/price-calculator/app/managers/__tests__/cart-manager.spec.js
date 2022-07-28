@@ -1,13 +1,12 @@
 import BasePriceManager from '../base-price-manager'
 import CartManager from '../cart-manager'
-jest.mock('../base-price-manager')
 
 describe('cartManager', () => {
   it('should lookup price and calculate total', () => {
     expect.assertions(1)
 
     const cartManager = new CartManager(
-      new BasePriceManager(),
+      new BasePriceManager('../../testdata/base-prices.json'),
       '../../testdata/cart-11356.json'
     )
 

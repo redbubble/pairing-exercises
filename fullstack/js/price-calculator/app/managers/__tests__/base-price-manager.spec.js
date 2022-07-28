@@ -15,14 +15,14 @@ describe('basePriceManager', () => {
     })
 
     expect(result).toStrictEqual(
-      new ProductBasePrice({
-        'product-type': 'hoodie',
-        options: {
+      new ProductBasePrice(
+        'hoodie',
+        {
           colour: ['white'],
           size: ['large'],
         },
-        'base-price': 3848,
-      })
+        3848
+      )
     )
   })
 
@@ -35,14 +35,14 @@ describe('basePriceManager', () => {
     })
 
     expect(result).toStrictEqual(
-      new ProductBasePrice({
-        'product-type': 'hoodie',
-        options: {
+      new ProductBasePrice(
+        'hoodie',
+        {
           colour: ['white', 'dark'],
           size: ['small', 'medium'],
         },
-        'base-price': 3800,
-      })
+        3800
+      )
     )
   })
 
@@ -51,12 +51,6 @@ describe('basePriceManager', () => {
 
     const result = basePriceManager.lookup('leggings')
 
-    expect(result).toStrictEqual(
-      new ProductBasePrice({
-        'product-type': 'leggings',
-        options: {},
-        'base-price': 5000,
-      })
-    )
+    expect(result).toStrictEqual(new ProductBasePrice('leggings', {}, 5000))
   })
 })

@@ -2,25 +2,30 @@ import CartItem from '../models/cart-item'
 
 export default class CartManager {
   data = []
-  basePriceManager
 
   constructor(basePriceManager, jsonFile) {
-    this.data = this.readJson(jsonFile)
-    this.basePriceManager = basePriceManager
+    this.data = this.readJson(basePriceManager, jsonFile)
   }
 
-  readJson(jsonFile) {
+  readJson(basePriceManager, jsonFile) {
     let data = []
+
     const rawData = require(jsonFile)
 
-    for (const rawItem in rawData) {
+    for (const rawItem of rawData) {
+      const basePrice = basePriceManager.lookup(
+        rawItem['product-type'],
+        rawItem.options
+      )
+
       const cartItem = new CartItem(
         rawItem['product-type'],
         rawItem.options,
         rawItem['artist-markup'],
         rawItem.quantity,
-        this.basePriceManager
+        basePrice
       )
+
       data.push(cartItem)
     }
 

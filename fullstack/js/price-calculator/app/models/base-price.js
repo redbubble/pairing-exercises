@@ -12,9 +12,9 @@ export default class ProductBasePrice {
    */
   price = 0
 
-  constructor(productBasePrice) {
-    this.productType = productBasePrice['product-type']
-    this.options = productBasePrice.options
-    this.price = productBasePrice['base-price']
+  constructor(productType, options, price) {
+    this.productType = productType
+    this.options = options
+    this.price = price
   }
 }
