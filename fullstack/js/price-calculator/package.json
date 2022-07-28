@@ -7,6 +7,7 @@
   },
   "main": "cli.js",
   "scripts": {
+    "start": "node bin/price-calculator --cart ../../testdata/cart-4560.json --base-prices ../../testdata/base-prices.json",
     "lint": "eslint . --fix",
     "test": "jest"
   },
