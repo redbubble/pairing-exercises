@@ -1,22 +1,22 @@
-import CartItem from '../models/cart-item'
+import CartItem from '../models/cart-item';
 
 export default class CartManager {
-  data = []
+  data = [];
 
   constructor(basePriceManager, jsonFile) {
-    this.data = this.readJson(basePriceManager, jsonFile)
+    this.data = this.readJson(basePriceManager, jsonFile);
   }
 
   readJson(basePriceManager, jsonFile) {
-    let data = []
+    let data = [];
 
-    const rawData = require(jsonFile)
+    const rawData = require(jsonFile);
 
     for (const rawItem of rawData) {
       const basePrice = basePriceManager.lookup(
         rawItem['product-type'],
         rawItem.options
-      )
+      );
 
       const cartItem = new CartItem(
         rawItem['product-type'],
@@ -24,15 +24,15 @@ export default class CartManager {
         rawItem['artist-markup'],
         rawItem.quantity,
         basePrice
-      )
+      );
 
-      data.push(cartItem)
+      data.push(cartItem);
     }
 
-    return data
+    return data;
   }
 
   calculateTotalPrices() {
-    throw new Error('Not implemented')
+    throw new Error('Not implemented');
   }
 }
