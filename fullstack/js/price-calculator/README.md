@@ -33,6 +33,12 @@ Options:
 node bin/price-calculator --cart ../../testdata/cart-4560.json --base-prices ../../testdata/base-prices.json
 ```
 
+or using the convenience npm command
+
+```
+npm start
+```
+
 ## Linting and formatting
 
 Linting provided by ESLint and Prettier.

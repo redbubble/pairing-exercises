@@ -1,6 +1,6 @@
-import arg from 'arg'
-import CartManager from './app/managers/cart-manager'
-import BasePriceManager from './app/managers/base-price-manager'
+import arg from 'arg';
+import CartManager from './app/managers/cart-manager';
+import BasePriceManager from './app/managers/base-price-manager';
 
 /**
  * Get cart and price from command line arguments.
@@ -19,11 +19,11 @@ function parseArgumentsIntoOptions(rawArgs) {
     {
       argv: rawArgs.slice(2),
     }
-  )
+  );
   return {
     cart: args['--cart'] || '',
     basePrices: args['--base-prices'] || '',
-  }
+  };
 }
 
 /**
@@ -31,11 +31,11 @@ function parseArgumentsIntoOptions(rawArgs) {
  * @param {Array} args - Command line arguments.
  */
 export function main(args) {
-  const options = parseArgumentsIntoOptions(args)
+  const options = parseArgumentsIntoOptions(args);
   const cartManager = new CartManager(
     new BasePriceManager(options.basePrices),
     options.cart
-  )
+  );
 
-  console.log(cartManager.calculateTotalPrices())
+  console.log(cartManager.calculateTotalPrices());
 }

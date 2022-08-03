@@ -1,24 +1,23 @@
-import ProductBasePrice from '../base-price'
+import ProductBasePrice from '../base-price';
 
 describe('productBasePriceModel', () => {
   it('has valid inputs', () => {
-    expect.assertions(3)
+    expect.assertions(3);
 
-    const testInput = {
-      'product-type': 'hoodie',
-      options: {
+    const result = new ProductBasePrice(
+      'hoodie',
+      {
         colour: ['white', 'dark'],
         size: ['small', 'medium'],
       },
-      'base-price': 3800,
-    }
-    const result = new ProductBasePrice(testInput)
+      3800
+    );
 
-    expect(result.productType).toBe('hoodie')
+    expect(result.productType).toBe('hoodie');
     expect(result.options).toStrictEqual({
       colour: ['white', 'dark'],
       size: ['small', 'medium'],
-    })
-    expect(result.price).toBe(3800)
-  })
-})
+    });
+    expect(result.price).toBe(3800);
+  });
+});
