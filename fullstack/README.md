@@ -8,7 +8,7 @@ This repository offers you the choice between four languages (Go, Javascript, Py
 Please select the option you are most comfortable with during the pairing session with our engineers.
 
 Each language has its own incomplete implementation of a
-[Price Calculator app](http://take-home-test.herokuapp.com/new-product-engineer),
+[Price Calculator app](functional-requirements),
 which we'll use as the basis for our fullstack pairing exercise.
 
 ## Interview Prep
@@ -25,7 +25,7 @@ exercise before the interview.**
   - Code structure
   - Tests
   - Design choices
-  - [Business logic](http://take-home-test.herokuapp.com/new-product-engineer)
+  - [Business logic](functional-requirements)
 
 ## During The Interview
 
