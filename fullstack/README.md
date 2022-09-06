@@ -1,23 +1,20 @@
 # Redbubble Fullstack Code Pairing Exercise
 
-Welcome to the fullstack code pairing exercise! You can choose whichever
-language option (Go, Javascript, Python, or Ruby) you are most comfortable to pair with
-our engineers during the session.
+Welcome to the fullstack code pairing exercise!
 
 ## Context
 
-Each language has its own incomplete implementation of a Price Calculator app,
-based on the following [functional requirements](http://take-home-test.herokuapp.com/new-product-engineer).
-We'll use it as a basis for our fullstack pairing exercise.
+This repository offers you the choice between four languages (Go, Javascript, Python, or Ruby).
+Please select the option you are most comfortable with during the pairing session with our engineers.
+
+Each language has its own incomplete implementation of a
+[Price Calculator app](http://take-home-test.herokuapp.com/new-product-engineer),
+which we'll use as the basis for our fullstack pairing exercise.
+
+## Interview Prep
 
 Before the interview, you'll need to set up the code on your machine. **However, please don't complete the
 exercise before the interview.**
-
-During the interview we'll talk through the structure of the codebase, and your
-thoughts on the setup and design, as well as the implementation. We won't be testing your language knowledge, but rather how you work with us to
-solve interesting problems.
-
-## Interview prep
 
 - Clone this repo. For the fullstack interview, you can pick either Go, Javascript, Python,
   or Ruby, and use their respective folder in the pairing session.
@@ -27,8 +24,19 @@ solve interesting problems.
 - Familiarise yourself with
   - Code structure
   - Tests
-  - Business logic
   - Design choices
-- We had fun creating it. It's not perfect, we'd love to hear how you'd improve it.
+  - [Business logic](http://take-home-test.herokuapp.com/new-product-engineer)
 
-And remember: **Don't need to complete the exercise prior to the interview!**
+## During The Interview
+
+During the interview we'll talk through the structure of the codebase, and your
+thoughts on the setup and design, as well as the implementation.
+
+We won't be testing your language knowledge, but rather how you work with us to
+solve interesting problems.
+
+## Final Words
+
+We had fun creating this exercise! It's not perfect, and we'd love to hear how you'd improve it.
+
+And remember: **Don't complete the exercise prior to the interview!**
