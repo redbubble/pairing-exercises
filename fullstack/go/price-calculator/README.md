@@ -7,7 +7,7 @@ http://take-home-test.herokuapp.com/new-product-engineer
 
 ## Dependencies
 
-* Go 1.16
+* Go 1.22
 * Some kind of shell terminal (e.g. `bash`, `zsh`) to leverage the `tools.sh` script
 
 ## Your mission, 007
