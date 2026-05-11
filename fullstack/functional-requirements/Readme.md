@@ -24,7 +24,7 @@ Your program should output the *total price* of the cart in cents followed by a 
 ### Data
 
 - The *cart* schema is available at: [cart.schema.json](cart.schema.json)
-- Some example carts are available at: [cart-4560.json](cart-4560.json), [cart-9363.json](cart-9363.json), [cart-9500.json](cart-9500.json), and [cart-11356.json](cart-11356.json)
+- Some example carts are available at: [cart-4560.json](cart-4560.json), [cart-5500.json](cart-5500.json), [cart-9363.json](cart-9363.json), [cart-9500.json](cart-9500.json), and [cart-11356.json](cart-11356.json)
 - The *base price* schema is available at: [base-prices.schema.json](base-prices.schema.json)
 - An example of base prices is available at: [base-prices.json](base-prices.json)
 
