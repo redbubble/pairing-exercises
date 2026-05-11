@@ -66,3 +66,11 @@ The required test data can be found in the `./test/data` folder. It contains
 a file of product base prices (`base-prices.json`), and several example carts
 (`cart-%d.json`). The price calculator program will need both a base prices
 file and a cart file.
+
+### Schemas
+
+JSON schemas for the test data can be found in the [functional-requirements](../../functional-requirements) folder.
+These are provided for reference/documentation purposes only. You will not be
+required to use them or integrate them, and they are not used at all by the
+existing code. They're just here in case you find them helpful, and can be
+safely ignored if you don't.

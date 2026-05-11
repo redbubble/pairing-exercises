@@ -1,0 +1,11 @@
+[
+    {
+        "product-type": "leggings",
+        "options": {
+            "size": "medium",
+            "colour": "red"
+        },
+        "artist-markup": 10,
+        "quantity": 1
+    }
+]

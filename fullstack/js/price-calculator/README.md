@@ -57,7 +57,7 @@ prices file and a cart file.
 
 ### Schemas
 
-JSON schemas for the test data can be found in the `./testdata/schemas` folder.
+JSON schemas for the test data can be found in the [functional-requirements](../../functional-requirements) folder.
 These are provided for reference/documentation purposes only. You will not be
 required to use them or integrate them, and they are not used at all by the
 existing code. They're just here in case you find them helpful, and can be
