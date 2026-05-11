@@ -1,6 +1,6 @@
 class CartItem < Struct.new(:product_type, :options, :artist_markup, :quantity, :base_price)
   def calculate_price
-    # raise NotImplementedError
+    raise NotImplementedError
   end
 
   def self.from_hash(hash)

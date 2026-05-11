@@ -5,4 +5,3 @@ look at one of the options below based on the role you're interviewing for.
 
 - [Fullstack Engineer](fullstack/README.md)
 - [Frontend Engineer](frontend/README.md)
-- [iOS Engineer](ios/README.md)
