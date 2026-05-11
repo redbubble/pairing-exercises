@@ -4,7 +4,7 @@ Welcome to the fullstack code pairing exercise!
 
 ## Context
 
-This repository offers you the choice between four languages (Go, Javascript, Python, or Ruby).
+This repository offers you the choice between three languages (Go, Javascript, or Ruby).
 Please select the option you are most comfortable with during the pairing session with our engineers.
 
 Each language has its own incomplete implementation of a
@@ -16,7 +16,7 @@ which we'll use as the basis for our fullstack pairing exercise.
 Before the interview, you'll need to set up the code on your machine. **However, please don't complete the
 exercise before the interview.**
 
-- Clone this repo. For the fullstack interview, you can pick either Go, Javascript, Python,
+- Clone this repo. For the fullstack interview, you can pick either Go, Javascript,
   or Ruby, and use their respective folder in the pairing session.
 - Set up the app in your IDE of choice. You will be sharing your screen during
   the pairing interview.
