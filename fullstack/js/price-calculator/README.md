@@ -6,8 +6,8 @@ You can find the functional requirements in the [functional-requirements](../../
 
 ## Dependencies
 
-- `node (v14.6.0)`
-- `npm (v6.14.5)`
+- `node (v22.17.1)`
+- `npm (v11.11.0)`
 
 ## Installation
 

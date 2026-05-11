@@ -6,7 +6,7 @@ You can find the functional requirements in the [functional-requirements](../../
 
 ## Dependencies
 
-* Go 1.22
+* Go 1.26.3
 * Some kind of shell terminal (e.g. `bash`, `zsh`) to leverage the `tools.sh` script
 
 ## Installation
