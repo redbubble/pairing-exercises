@@ -1,6 +1,6 @@
 import arg from 'arg';
-import CartManager from './app/managers/cart-manager';
-import BasePriceManager from './app/managers/base-price-manager';
+import BasePriceManager from './app/managers/base-price-manager.js';
+import CartManager from './app/managers/cart-manager.js';
 
 /**
  * Get cart and price from command line arguments.

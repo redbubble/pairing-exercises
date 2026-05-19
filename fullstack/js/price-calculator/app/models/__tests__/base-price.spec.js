@@ -1,4 +1,4 @@
-import ProductBasePrice from '../base-price';
+import ProductBasePrice from '../base-price.js';
 
 describe('productBasePriceModel', () => {
   it('has valid inputs', () => {

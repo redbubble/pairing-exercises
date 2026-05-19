@@ -1,5 +1,5 @@
-import ProductBasePrice from '../base-price';
-import CartItem from '../cart-item';
+import ProductBasePrice from '../base-price.js';
+import CartItem from '../cart-item.js';
 
 describe('cartItemModel', () => {
   it('should calculate price correctly', () => {

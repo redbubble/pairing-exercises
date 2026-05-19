@@ -1,10 +1,8 @@
-import ProductBasePrice from '../../models/base-price';
-import BasePriceManager from '../base-price-manager';
+import ProductBasePrice from '../../models/base-price.js';
+import BasePriceManager from '../base-price-manager.js';
 
 describe('basePriceManager', () => {
-  const basePriceManager = new BasePriceManager(
-    '../../testdata/base-prices.json'
-  );
+  const basePriceManager = new BasePriceManager('./testdata/base-prices.json');
 
   it('should lookup single option item', () => {
     expect.assertions(1);

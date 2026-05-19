@@ -1,4 +1,6 @@
-import CartItem from '../models/cart-item';
+import { readFileSync } from 'node:fs';
+import { resolve } from 'node:path';
+import CartItem from '../models/cart-item.js';
 
 export default class CartManager {
   data = [];
@@ -8,9 +10,9 @@ export default class CartManager {
   }
 
   readJson(basePriceManager, jsonFile) {
-    let data = [];
+    const data = [];
 
-    const rawData = require(jsonFile);
+    const rawData = JSON.parse(readFileSync(resolve(jsonFile), 'utf8'));
 
     for (const rawItem of rawData) {
       const basePrice = basePriceManager.lookup(
