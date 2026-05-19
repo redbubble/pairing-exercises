@@ -1,4 +1,5 @@
-import ProductBasePrice from '../models/base-price';
+import { readFileSync } from 'node:fs';
+import ProductBasePrice from '../models/base-price.js';
 
 export default class BasePriceManager {
   data = {};
@@ -8,8 +9,8 @@ export default class BasePriceManager {
   }
 
   readJson(jsonFile) {
-    let data = new Object();
-    const rawData = require(jsonFile);
+    const data = new Object();
+    const rawData = JSON.parse(readFileSync(jsonFile, 'utf8'));
 
     for (const rawItem of rawData) {
       const productBasePrice = new ProductBasePrice(

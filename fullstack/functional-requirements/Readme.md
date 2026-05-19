@@ -52,7 +52,3 @@ the price for one item as follows:
 ```
 (base_price + round(base_price * artist_markup)) * quantity
 ```
-
-The time your program takes to calculate a price should be constant with respect
-to the number of *base prices*.
-(In real life, Redbubble currently has more than `1,000` base prices.)

@@ -1,4 +1,4 @@
 #!/usr/bin/env node
 
-require = require('esm')(module /*, options*/)
-require('../main').main(process.argv)
+import { main } from '../main.js';
+main(process.argv);

@@ -31,7 +31,7 @@ Options:
 | base-prices | String |   Yes    | File path for base prices |
 
 ```
-node bin/price-calculator --cart ../../testdata/cart-4560.json --base-prices ../../testdata/base-prices.json
+node bin/price-calculator --cart ./testdata/cart-4560.json --base-prices ./testdata/base-prices.json
 ```
 
 Or using the convenience npm command:
@@ -65,7 +65,7 @@ safely ignored if you don't.
 
 ## Linting
 
-Linting provided by ESLint and Prettier.
+Linting provided by Biome.
 
 ```
 npm run lint
