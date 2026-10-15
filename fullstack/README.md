@@ -34,8 +34,9 @@ exercise before the interview.**
 During the interview we'll talk through the structure of the codebase, and your
 thoughts on the setup and design, as well as the implementation.
 
-We won't be testing your language knowledge, but rather how you work with us to
-solve interesting problems.
+While it is expected you'll be familiar with one of the programming languages offered
+for this pairing exercise, that's not the focus. Rather, we'd like to understand how
+you work with us to solve interesting problems.
 
 ## Final Words
 
