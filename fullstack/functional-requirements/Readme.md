@@ -1,8 +1,12 @@
 # Fullstack Pairing Exercise - Functional Requirements
 
-Following are the functional requirements for our fullstack pairing exercise.
+This document outlines the core domain logic and data structures for the **Price Calculator app**.
 
-Please familiarise yourself with the business logic before the interview.
+> 💡 **For Stage 3.1 Candidates:** You will review these requirements together with your interviewer during the call. No pre-interview preparation is required.
+> 
+> 💡 **For Stage 3.2 Candidates:** Use this document to understand the underlying calculation rules and schemas while completing the implementation.
+
+---
 
 ### Inputs
 
