@@ -6,8 +6,6 @@ This document outlines the core domain logic and data structures for the **Price
 > 
 > 💡 **For Stage 3.2 Candidates:** Use this document to understand the underlying calculation rules and schemas while completing the implementation.
 
----
-
 ### Inputs
 
 Your program should take two command-line arguments:

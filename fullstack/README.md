@@ -23,7 +23,6 @@ Please check which interview stage you are completing today and follow the instr
   - Followed by the walkthrough, we'll discuss the edge cases and testing strategy.
 * **Note:** You will **not** be asked to implement any incomplete methods or feature logic during Stage 3.1.
 
----
 
 ### 🔹 Stage 3.2: Technical Implementation & Pairing
 * **Before the interview:** Please set up the code on your machine before the session (**however, please don't complete the exercise beforehand**).
