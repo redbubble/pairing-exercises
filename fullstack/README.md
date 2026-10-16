@@ -37,9 +37,11 @@ Please check which interview stage you are completing today and follow the instr
     - Tests
     - Design choices
     - [Business logic](functional-requirements)
-* **During the interview:** We'll pair on implementing missing functionality, resolving tests, and discussing design choices.
+* **During the interview:** 
+  - We'll pair on implementing missing functionality, resolving tests, and discussing design choices.
+  - While it is expected you'll be familiar with one of the programming languages offered for this pairing exercise, that's not the focus. Rather, we'd like to understand how you work with us to solve interesting problems.
 
 ## Final Words
 
-We won't be testing your language knowledge, but rather how you work with us to solve interesting problems. We had fun creating this exercise! It's not perfect, and we'd love to hear how you'd improve it.
+We had fun creating this exercise! It's not perfect, and we'd love to hear how you'd improve it.
 
