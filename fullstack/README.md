@@ -15,7 +15,7 @@ which we'll use as the basis for our fullstack pairing exercise.
 
 Please check which interview stage you are completing today and follow the instructions below:
 
-### 🔹 Stage 3.1: Technical Walkthrough & Test Cases Exploration
+### 🔹 Tech Blitz: Technical Walkthrough & Test Exploration
 * **Before the interview:** No prep required! You do not need to set up or complete any code prior to the session.
 * **During the interview:** 
   - We will share the repository link live during the first few minutes of the call. You'll clone it and open it in your preferred IDE.
@@ -24,7 +24,7 @@ Please check which interview stage you are completing today and follow the instr
 * **Note:** You will **not** be asked to implement any incomplete methods or feature logic during Stage 3.1.
 
 
-### 🔹 Stage 3.2: Technical Implementation & Pairing
+### 🔹 Full Tech Interview: Technical Implementation & Pairing
 * **Before the interview:** Please set up the code on your machine before the session (**however, please don't complete the exercise beforehand**).
   - Clone this repo. For the fullstack interview, you can pick either:
     - [Go](go/price-calculator/README.md)
