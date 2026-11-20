@@ -15,7 +15,7 @@ We recommend installing Ruby via [asdf](https://asdf-vm.com/) or [rbenv](https:/
 Alternatively you can work with Docker:
 
 ```shell
-docker run -it --rm -v "$PWD":/usr/src/app -w /usr/src/app ruby:3.1.2 rake test
+docker run -it --rm -v "$PWD":/usr/src/app -w /usr/src/app ruby:3.4.13 rake test
 ```
 
 ## Running the application
