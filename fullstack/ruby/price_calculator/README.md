@@ -6,7 +6,7 @@ You can find the functional requirements in the [functional-requirements](../../
 
 ## Dependencies
 
-- ruby 3.4.8
+- ruby 3.4.13
 
 ## Installation
 
